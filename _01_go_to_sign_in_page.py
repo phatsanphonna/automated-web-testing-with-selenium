@@ -7,11 +7,9 @@ from time import sleep
 browser.get('https://ijudge.it.kmitl.ac.th')
 
 
-elem = WebDriverWait(browser, 30).until(
+WebDriverWait(browser, 30).until(
     EC.element_to_be_clickable((By.CLASS_NAME, "mui-16csuza"))
-)
-
-elem.click()
+).click()
 
 sleep(10)
 
